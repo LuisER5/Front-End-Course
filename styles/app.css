@@ -95,6 +95,9 @@ main {
 .contact {
     grid-area: aside;
     margin: 10px auto 30px auto;
+    min-width: 500px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 .contact h2 {
     text-align: center;
