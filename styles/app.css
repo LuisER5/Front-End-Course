@@ -1,0 +1,152 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1, h2, h3 {
+    color: darkblue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+ul {
+    list-style-type: none;
+    color: black;
+}
+input, select {
+    padding: 6px;
+}
+textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.container {
+    display: grid;
+    grid-template-areas: 
+        "header header"
+        "main main"
+        "aside aside"
+        "footer footer";
+    grid-template-columns: auto;
+    gap: 10px;
+}
+
+/* Header Section */
+.header {
+    grid-area: header;
+    display: flex;
+    align-items: center;
+    padding: 0.8rem;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+}
+.user-img {
+    margin-right: 15px;
+    height: 60px;
+    border-radius: 50%;
+    border: 1px solid #b3aeae;
+}
+
+.header .menu-options {
+    margin-left: auto;
+}
+
+.menu-options {
+    float: right;
+}
+
+.menu-options li {
+    display: inline;
+    padding-right: 3rem;
+}
+
+.menu-options li a:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+
+/* Main Section */
+main {
+    grid-area: main;
+    height: 100%;
+    background-color: #dadada;
+    padding: 8px;
+    color: #202020;
+}
+
+.experience {
+    border: inset 1px;
+    margin-bottom: 4px;
+    padding: 4px;
+    background-color: white;
+    color: #222;
+}
+.exp-title {
+    font-weight: bold;
+}
+
+/* Aside Section */
+.contact {
+    grid-area: aside;
+    margin: 10px auto 30px auto;
+}
+.contact h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+#formInfo {
+    text-align: center;
+}
+
+.input-container, .button {
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+}
+.input-container label {
+    padding-bottom: 4px;
+}
+
+.button button {
+    padding: 6px;
+    cursor: pointer;
+}
+
+
+/* Footer Section */
+footer {
+    grid-area: footer;
+    width: 100%;
+    background-color: #202020;
+    color: lightblue;
+    text-align: center;
+    padding: 2px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+.active {
+    color: blue;
+}
+
+@media (max-width: 750px) {
+    .header {
+        flex-direction: column;
+    }
+    .user {
+        justify-content: space-between;
+    }
+    .header .menu-options {
+        margin-right: auto;
+    }
+    .menu-options li {
+        padding-right: 1.5rem;
+    }
+}

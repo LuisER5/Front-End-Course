@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/app.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="user">
+                <img class="user-img" src="/assets/user.png" alt="user">
+                <h1 class="user-name">Luis Rodriguez</h1>
+            </div>
+
+            <ul id="menu" class="menu-options">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="/pages/about.html">About</a></li>
+                <li><a href="/pages/privacy.html">Privacy</a></li>
+            </ul>
+        </header>
+
+        <main>
+            <p><strong>Purpose:</strong> This is a resume (or CV) to help me get a job in web development.</p>
+            <h2>Experience</h2>
+            <div class="experience">
+                <p class="exp-title">Consulting services - 2021</p>
+                <p>Software Developer Intern</p>
+            </div>
+            <div class="experience">
+                <p class="exp-title">Consulting services - 2021 - Present</p>
+                <p>Software Developer</p>
+            </div>
+        </main>
+
+        <aside class="contact">
+            <h2>Contact me</h2>
+            <div id="formInfo"></div>
+            <form id="contactForm">
+                <div class="input-container">
+                    <label for="name">Full Name</label>
+                    <input type="text" name="name" id="name">
+                </div>
+                <div class="input-container">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div class="input-container">
+                    <label for="subject">Subject</label>
+                    <select id="subject">
+                        <option value="JO" selected>Job Offer</option>
+                        <option value="PM">Personal Message</option>
+                        <option value="CT">Complaint</option>
+                    </select>
+                </div>
+                <div class="input-container">
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                </div>
+                <div class="button">
+                    <button type="submit">
+                        Send
+                    </button>
+                </div>
+            </form>
+        </aside>
+
+        <footer>
+            &copy; 2022 Copyright - Luis Rodriguez
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
